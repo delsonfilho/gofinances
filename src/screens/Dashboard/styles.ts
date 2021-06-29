@@ -7,6 +7,8 @@ import {
   getStatusBarHeight,
 } from "react-native-iphone-x-helper";
 
+import { BorderlessButton } from "react-native-gesture-handler";
+
 import { DataListProps } from ".";
 
 export const Container = styled.View`
@@ -17,7 +19,7 @@ export const Container = styled.View`
 export const Header = styled.View`
   width: 100%;
   height: ${RFPercentage(42)};
-  
+
   background-color: ${({ theme }) => theme.colors.primary};
 
   justify-content: center;
@@ -29,7 +31,7 @@ export const UserWrapper = styled.View`
   width: 100%;
 
   padding: 0 24px;
-  margin-top: ${getStatusBarHeight() - RFValue(28)}px;
+  margin-top: ${getStatusBarHeight() + RFValue(28)}px;
 
   flex-direction: row;
   justify-content: space-between;
@@ -63,6 +65,10 @@ export const UserName = styled.Text`
 
   font-size: ${RFValue(18)}px;
   font-family: ${({ theme }) => theme.fonts.bold};
+`;
+
+export const LogoutButton = styled(BorderlessButton)`
+
 `;
 
 export const Icon = styled(Feather)`
