@@ -7,12 +7,12 @@ interface IconProps {
   type: "up" | "down";
 }
 
-interface ContainterProps {
+interface ContainerProps {
   isActive: boolean;
   type: "up" | "down";
 }
 
-export const Containter = styled(TouchableOpacity)<ContainterProps>`
+export const Container = styled(TouchableOpacity)<ContainerProps>`
   width: 48%;
 
   flex-direction: row;

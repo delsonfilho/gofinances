@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacityProps } from "react-native";
 
-import { Containter, Title, Icon } from "./styles";
+import { Container, Title, Icon } from "./styles";
 
 const icons = {
   up: "arrow-up-circle",
@@ -21,9 +21,9 @@ export function TransactionTypeButton({
   ...rest
 }: Props) {
   return (
-    <Containter isActive={isActive} type={type} {...rest}>
+    <Container isActive={isActive} type={type} {...rest}>
       <Icon name={icons[type]} type={type} />
       <Title>{title}</Title>
-    </Containter>
+    </Container>
   );
 }

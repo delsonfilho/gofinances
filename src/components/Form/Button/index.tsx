@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacityProps } from "react-native";
 
-import { Containter, Title } from "./styles";
+import { Container, Title } from "./styles";
 
 interface Props extends TouchableOpacityProps {
   title: string;
@@ -9,8 +9,8 @@ interface Props extends TouchableOpacityProps {
 
 export function Button({ title, ...rest }: Props) {
   return (
-    <Containter {...rest}>
+    <Container {...rest}>
       <Title>{title}</Title>
-    </Containter>
+    </Container>
   );
 }
