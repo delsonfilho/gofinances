@@ -1,19 +1,16 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { useFocusEffect } from "@react-navigation/native";
+import React, { useEffect, useState, useCallback } from "react";
 import { ActivityIndicator } from "react-native";
-
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
-import { RFValue } from "react-native-responsive-fontsize";
-
-import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
-
 import { VictoryPie } from "victory-native";
-
+import { RFValue } from "react-native-responsive-fontsize";
 import { addMonths, subMonths, format } from "date-fns";
 import { ptBR } from "date-fns/locale";
+import { useFocusEffect } from "@react-navigation/native";
 
+import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import { useTheme } from "styled-components";
+
+import { useAuth } from "../../hooks/auth";
 
 import { HistoryCard } from "../../components/HistoryCard";
 
@@ -29,7 +26,9 @@ import {
   Month,
   LoadContainer,
 } from "./styles";
+
 import { categories } from "../../utils/categories";
+
 
 interface TransactionData {
   type: "positive" | "negative";
@@ -45,8 +44,7 @@ interface CategoryData {
   total: number;
   totalFormatted: string;
   color: string;
-  percentFormatted: string;
-  percent: number;
+  percent: string;
 }
 
 export function Resume() {
@@ -58,7 +56,9 @@ export function Resume() {
 
   const theme = useTheme();
 
-  function handleChangeDate(action: "next" | "prev") {
+  const { user } = useAuth();
+
+  function handleDateChange(action: "next" | "prev") {
     if (action === "next") {
       setSelectedDate(addMonths(selectedDate, 1));
     } else {
@@ -68,7 +68,7 @@ export function Resume() {
 
   async function loadData() {
     setIsLoading(true);
-    const dataKey = "@gofinances:transactions";
+    const dataKey = `@gofinances:transactions_user:${user.id}`;
     const response = await AsyncStorage.getItem(dataKey);
     const responseFormatted = response ? JSON.parse(response) : [];
 
@@ -80,8 +80,8 @@ export function Resume() {
     );
 
     const expensivesTotal = expensives.reduce(
-      (accumulator: number, expensive: TransactionData) => {
-        return accumulator + Number(expensive.amount);
+      (acumullator: number, expensive: TransactionData) => {
+        return acumullator + Number(expensive.amount);
       },
       0
     );
@@ -98,22 +98,22 @@ export function Resume() {
       });
 
       if (categorySum > 0) {
-        const totalFormatted = categorySum.toLocaleString("pt-br", {
+        const totalFormatted = categorySum.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
         });
 
-        const percent = (categorySum / expensivesTotal) * 100;
-        const percentFormatted = `${percent.toFixed(0)}%`;
+        const percent = `${((categorySum / expensivesTotal) * 100).toFixed(
+          0
+        )}%`;
 
         totalByCategory.push({
           key: category.key,
           name: category.name,
-          total: categorySum,
           color: category.color,
-          percent,
-          percentFormatted,
+          total: categorySum,
           totalFormatted,
+          percent,
         });
       }
     });
@@ -131,11 +131,11 @@ export function Resume() {
   return (
     <Container>
       <Header>
-        <Title>Resumo por Categoria</Title>
+        <Title>Resumo por categoria</Title>
       </Header>
       {isLoading ? (
         <LoadContainer>
-          <ActivityIndicator />
+          <ActivityIndicator color={theme.colors.primary} size="large" />
         </LoadContainer>
       ) : (
         <Content
@@ -146,16 +146,19 @@ export function Resume() {
           }}
         >
           <MonthSelect>
-            <MonthSelectButton onPress={() => handleChangeDate("prev")}>
+            <MonthSelectButton onPress={() => handleDateChange("prev")}>
               <MonthSelectIcon name="chevron-left" />
             </MonthSelectButton>
+
             <Month>
               {format(selectedDate, "MMMM, yyyy", { locale: ptBR })}
             </Month>
-            <MonthSelectButton onPress={() => handleChangeDate("next")}>
+
+            <MonthSelectButton onPress={() => handleDateChange("next")}>
               <MonthSelectIcon name="chevron-right" />
             </MonthSelectButton>
           </MonthSelect>
+
           <ChartContainer>
             <VictoryPie
               data={totalByCategories}
@@ -168,10 +171,11 @@ export function Resume() {
                 },
               }}
               labelRadius={50}
-              x="percente"
+              x="percent"
               y="total"
             />
           </ChartContainer>
+
           {totalByCategories.map((item) => (
             <HistoryCard
               key={item.key}

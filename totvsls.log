@@ -1,0 +1,95 @@
+File verbosity level: 9
+date       time         ( uptime  ) [ thread name/id ]                   file:line     v| 
+2021-07-12 22:53:08.700 (   0.000s) [        4137F88 ]             loguru.cpp:755    INF| Logging to 'totvsls.log', mode: 'w', verbosity: 9
+(   0.000s) [main thread     ]             loguru.cpp:591   | arguments: /home/delson_filho/.vscode/extensions/totvs.tds-vscode-1.2.1/node_modules/@totvs/tds-ls/bin/linux/advpls --language-server --log-file=totvsls.log --record=totvsls
+(   0.000s) [main thread     ]             loguru.cpp:594   | Current dir: /home/delson_filho/projetos/rocketseat/ignite/gofinances
+(   0.000s) [main thread     ]             loguru.cpp:596   | stderr verbosity: -3
+(   0.000s) [main thread     ]             loguru.cpp:597   | -----------------------------------
+(   0.000s) [main thread     ]    security_manager.cc:855   | lsRsaInit
+(   0.006s) [main thread     ]    security_manager.cc:1061  | userRsaInit
+(   0.006s) [main thread     ]    security_manager.cc:1080  | Loading user prv key.
+(   0.006s) [main thread     ]    security_manager.cc:1111  | Loading user pub key.
+(   0.006s) [main thread     ]    security_manager.cc:1210  | Loading user symm key.
+(   0.013s) [querydb         ] msg_lsp_initialize_req:489   | Start Running initialize
+(   0.013s) [stdout          ]               timer.cc:41    | [e2e] Running  took 0.2 ms
+(   0.013s) [querydb         ] msg_lsp_initialize_req:495   | Init parameters: {"compilationDatabaseCommand":"","compilationDatabaseDirectory":"","cacheDirectory":"","cacheFormat":"json","resourceDirectory":"","discoverSystemIncludes":true,"extraClangArguments":[],"progressReportFrequencyMs":500,"emitQueryDbBlocked":false,"emitInactiveRegions":false,"showDocumentLinksOnIncludes":true,"codeLens":{"localVariables":true},"completion":{"enableSnippets":true,"detailedLabel":false,"dropOldRequests":true,"filterAndSort":true,"includeMaxPathSize":30,"includeSuffixWhitelist":[".h",".hpp",".hh",".ch"],"includeBlacklist":[],"includeWhitelist":[]},"formatting":{"enabled":false},"diagnostics":{"blacklist":[],"whitelist":[],"frequencyMs":0,"onParse":true,"onType":true},"highlight":{"enabled":false,"blacklist":[],"whitelist":[]},"index":{"attributeMakeCallsToCtor":true,"blacklist":[],"whitelist":[],"comments":2,"enabled":true,"logSkippedPaths":false,"threads":0},"workspaceSymbol":{"maxNum":1000,"sort":true},"xref":{"maxNum":2000},"enableIndexOnDidChange":false}
+(   0.013s) [querydb         ] msg_lsp_initialize_req:510   | [querydb] Initialize in directory /home/delson_filho/projetos/rocketseat/ignite/gofinances with uri file:///home/delson_filho/projetos/rocketseat/ignite/gofinances
+(   0.013s) [querydb         ] msg_lsp_initialize_req:567   | Using -resource-dir=/home/delson_filho/projetos/rocketseat/ignite/gofinances/DEFAULT_RESOURCE_DIRECTORY
+(   0.013s) [querydb         ] msg_lsp_initialize_req:570   | Send initialization before starting indexers, so we don't send a status update too early.
+(   0.013s) [querydb         ] msg_lsp_initialize_req:590   | Set project root.
+(   0.013s) [stdout          ]               timer.cc:41    | [e2e] Running initialize took 0.164 ms
+(   0.013s) [querydb         ]               timer.cc:41    | compile_commands.json advpllang time took 0.0 ms
+(   0.013s) [querydb         ]               timer.cc:41    | compile_commands.json our time took 0.0 ms
+(   0.013s) [querydb         ]               timer.cc:41    | [perf] Loaded compilation entries (0 files) took 0.37 ms
+(   0.013s) [querydb         ] msg_lsp_initialize_req:621   | Starting 9 indexers
+(   0.014s) [querydb         ]               timer.cc:41    | [perf] Dispatched initial index requests took 0.0 ms
+(   0.014s) [querydb         ] msg_lsp_initialize_req:650   | End Running initialize
+(   0.120s) [querydb         ] msg_lsp_initialized_no:22    | Got Initialized Notification
+(   0.120s) [stdout          ]               timer.cc:41    | [e2e] Running  took 106.106708 ms
+(   0.122s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(   0.122s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key autocomplete, value LS
+(   0.122s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.8 ms
+(   0.122s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(   0.122s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(   0.122s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key notificationlevel, value none
+(   0.122s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.49 ms
+(   0.122s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.3 ms
+(   0.122s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(   0.122s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.128 ms
+(   0.124s) [querydb         ] msg_totvsserver_reconn:48    | Start Running $totvsserver/reconnect
+(   0.124s) [querydb         ] msg_totvsserver_reconn:52    | Reconnecting server with connectionToken: djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTA3MzoyOjE6MA==.ArEOFoefT+vlWzL4JLEoZSl/l2aF+5HtQyLcsT1GfgHJHMfyClfuDREeAV09nJWMuA/JwMwHlTTvzZOvDCg9qiKsNHlbqUh0h3hl65VjaDkm+MGTGdJIgym0+MKM3HpBzjyF5gP/1PAk0u39KWk5CMHYipwksUM8NEzC5MhtZvRMhpldSYaPYZfM6Y6oXFIk/yc8pNDI3y0MQcQKh7ODAewXyEA0dZD3HtXn5kPa0ytQn+siy2QnfbtsqlhQ7iSCJEvP1t6jK9pIvrYORQeL/ffP9Yr42tmAwze+4JayV8cVV9LVjPobkIh8OUPSqA/YldVdIRGuW+/gFIUxfrxE7g==
+(   0.124s) [querydb         ]  connection_manager.cc:382   | Starting reconnection to the server 'Fertecnica_Cloud'
+(   0.124s) [stdout          ]               timer.cc:41    | [e2e] Running  took 111.111208 ms
+(   0.125s) [querydb         ]    security_manager.cc:335   | authentic TRUE
+(   0.125s) [querydb         ]    security_manager.cc:518   | done FbPryvqSbugVVDxv7/aoyabsoFtc8bFqbmdqd/oRDI8=
+(   0.125s) [querydb         ]    security_manager.cc:528   | done password symmDecrypt (10)
+(   0.125s) [querydb         ]  connection_manager.cc:3492  | ConnectionManager::newConnection: 10.0.51.2:3005 (20191205055624) [1] {3}
+(   0.125s) [querydb         ]  connection_manager.cc:3496  | connected status: 0
+(   0.225s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.244s) [scan_includes   ]               timer.cc:41    | [perf] Scanning for includes took 230.230449 ms
+(   0.325s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.425s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.525s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.625s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.726s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.826s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   0.926s) [querydb         ]  connection_manager.cc:3496  | connected status: 1
+(   1.026s) [querydb         ]  connection_manager.cc:3499  | connected status: 2
+(   1.099s) [querydb         ]  connection_manager.cc:3507  | MS_DBGGETBUILD OK
+(   1.099s) [querydb         ]  connection_manager.cc:3517  | build: 7.00.191205P
+(   1.099s) [querydb         ]  connection_manager.cc:3554  | creating secureContext
+(   1.099s) [querydb         ]  connection_manager.cc:3556  | secureContext initialize
+(   1.408s) [querydb         ]  connection_manager.cc:3559  | asymmetric generateKeys
+(   1.408s) [querydb         ]  connection_manager.cc:3561  | secureContext initialized
+(   1.489s) [querydb         ]    security_manager.cc:539   | encodedExtraInfo: djI6MTYyNjE0MTE5MDoyOjE6MA==
+(   1.495s) [querydb         ]    security_manager.cc:287   | signature aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q==
+(   1.495s) [querydb         ]  connection_manager.cc:444   | Reconnection to the server 'Fertecnica_Cloud' finished.
+(   1.495s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager Reconnect server for connectionToken: djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTE5MDoyOjE6MA==.aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q== took 1370.1369323 ms
+(   1.495s) [stdout          ]               timer.cc:41    | [e2e] Running  took 1481.1480505 ms
+(   1.495s) [querydb         ] msg_totvsserver_reconn:112   | End Running $totvsserver/reconnect
+(   1.495s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/reconnect took 1370.1369432 ms
+(   3.538s) [querydb         ] msg_totvsserver_discon:44    | Start Running $totvsserver/disconnect
+(   3.538s) [querydb         ] msg_totvsserver_discon:47    | Disconnect from server with connectionToken: djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTE5MDoyOjE6MA==.aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q==
+(   3.538s) [querydb         ]  connection_manager.cc:3984  | Searching for connection token: djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTE5MDoyOjE6MA==.aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q==
+(   3.538s) [querydb         ]  connection_manager.cc:3988  | Connections thread size: 1
+(   3.538s) [querydb         ]  connection_manager.cc:3998  | connection pointer address 0x3385a80
+(   3.539s) [querydb         ]  connection_manager.cc:465   | retrievedConnectionThread status 2
+(   3.546s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager Disconnect server for connectionToken: djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTE5MDoyOjE6MA==.aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q== took 7.7538 ms
+(   3.546s) [stdout          ]               timer.cc:41    | [e2e] Running  took 3532.3529303 ms
+(   3.546s) [querydb         ] msg_totvsserver_discon:86    | End Running $totvsserver/disconnect
+(   3.546s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/disconnect took 7.7941 ms
+(4333.704s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(4333.704s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key autocomplete, value LS
+(4333.704s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.3 ms
+(4333.704s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(4333.704s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.130 ms
+(4333.704s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(4333.704s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key notificationlevel, value none
+(4333.704s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.2 ms
+(4333.704s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(4333.704s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.203 ms
+(5174.450s) [querydb         ] msg_lsp_shutdown_reque:26    | Start Running shutdown
+(5174.450s) [querydb         ] msg_lsp_shutdown_reque:30    | End Running shutdown
+(5174.450s) [stdout          ]               timer.cc:41    | [e2e] Running shutdown took 0.85 ms
+(5174.494s) [querydb         ] msg_lsp_exit_notificat:18    | Exiting; got exit message
+(5174.494s) [querydb         ]             loguru.cpp:471   | atexit

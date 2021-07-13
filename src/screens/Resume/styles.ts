@@ -36,7 +36,7 @@ export const ChartContainer = styled.View`
 
 export const MonthSelect = styled.View`
   width: 100%;
-  flex-direction: space-between;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 

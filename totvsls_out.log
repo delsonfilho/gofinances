@@ -1,0 +1,148 @@
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 108
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Initializing Language Server."}}
+
+Content-Length: 604
+
+{"jsonrpc":"2.0","id":0,"result":{"capabilities":{"hoverProvider":false,"declarationProvider":false,"definitionProvider":false,"typeDefinitionProvider":false,"implementationProvider":false,"referencesProvider":false,"documentHighlightProvider":false,"documentSymbolProvider":false,"codeActionProvider":false,"colorProvider":false,"workspaceSymbolProvider":false,"documentFormattingProvider":false,"documentRangeFormattingProvider":false,"documentOnTypeFormattingProvider":false,"renameProvider":false,"foldingRangeProvider":false,"executeCommandProvider":{"commands":[]},"selectionRangeProvider":false}}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 107
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Language Server initialized."}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 81
+
+{"jsonrpc":"2.0","id":1,"result":{"setting":{"key":"autocomplete","value":"LS"}}}
+
+Content-Length: 88
+
+{"jsonrpc":"2.0","id":2,"result":{"setting":{"key":"notificationlevel","value":"none"}}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 133
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Starting reconnection to the server 'Fertecnica_Cloud'"}}
+
+Content-Length: 134
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Reconnection to the server 'Fertecnica_Cloud' finished."}}
+
+Content-Length: 665
+
+{"jsonrpc":"2.0","id":3,"result":{"connectionToken":"djM6OWM4MGtvbnZuNXJrcG9zdTFtZ3VkbTZvY3hxdWk6MToxMC4wLjUxLjI6MzAwNToxOjcuMDAuMTkxMjA1UDoz:djE6RmVydGVjbmljYV9DdXN0b206bm91c2VyOkZiUHJ5dnFTYnVnVlZEeHY3L2FveWFic29GdGM4YkZxYm1kcWQvb1JESTg9|djI6MTYyNjE0MTE5MDoyOjE6MA==.aVGQAMND5hQofWOmQDTjMe15YY6rKHx/hjiw8yEveMkDZT92niclyM4kRC4mhGRLaMyldDjX+7ChdIg2/KLrIev7C8vR4j6A0m6TjfDAbX2VI/WAG0IJIjH5rmukrJLbZgadD9DZo07LLapkSMBQvGA5LBAwwfWSUB8Lf3TGpG4gi9uwCh7kxQjAMdjHo4pfQ41x9K/utehoqPGBdroHsACp8wkDIodjSwsevTO2C1uIIcmYctZcb5RozMjSHX5rPvuobIOEoVa0eCNQvDrFIRn7Bjm78vIHZ0iRZNZhizWgKmaUToAtlL3D4aXjRm5zBAcFV92WOCEVMBAcK4oA4Q==","environment":"Fertecnica_Custom","user":"nouser"}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 131
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Server 'Fertecnica_Cloud' successfully disconnected."}}
+
+Content-Length: 55
+
+{"jsonrpc":"2.0","id":4,"result":{"message":"Success"}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 81
+
+{"jsonrpc":"2.0","id":5,"result":{"setting":{"key":"autocomplete","value":"LS"}}}
+
+Content-Length: 88
+
+{"jsonrpc":"2.0","id":6,"result":{"setting":{"key":"notificationlevel","value":"none"}}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":7,"result":null}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
+Content-Length: 157
+
+{"jsonrpc":"2.0","method":"$totvsserver/progress","params":{"indexRequestCount":0,"doIdMapCount":0,"onIdMappedCount":0,"onIndexedCount":0,"activeThreads":0}}
+
